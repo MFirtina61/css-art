@@ -1,0 +1,87 @@
+.plant {
+    position: absolute;
+    height: 5.62em;
+    width: 5.62em;
+    background: linear-gradient(
+      #f74242 80%,
+      #ffffff 80%,
+      #90e0fd 80%
+    );
+    bottom: -8em;
+    left: 15em;
+    border-radius: 1rem;
+  }
+  .succulent {
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: #138b66;
+    border-radius: 2.5em 0;
+    top: -2.18em;
+    left: 2.5em;
+    transform: rotate(10deg);
+  }
+  .succulent:before {
+    content: "";
+    position: absolute;
+    height: 3.75em;
+    width: 3.75em;
+    background-color: #1bb68a;
+    border-radius: 3.75em 0;
+    bottom: 0.75em;
+    left: -2em;
+    transform: rotate(-50deg);
+  }
+
+
+
+
+
+  .plant2 {
+    position: absolute;
+    height: 8.62em;
+    width: 5.62em;
+    background: linear-gradient(
+      #9643e3 80%,
+      #ffffff 80%,
+      #9330a7 80%
+    );
+    bottom: -8em;
+    left: 5em;
+    border-radius: 10rem;
+  }
+  .succulent2 {
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: #138b66;
+    border-radius: 2.5em 0;
+    top: -2.18em;
+    left: 2.5em;
+    transform: rotate(10deg);
+  }
+  .succulent2:before {
+    content: "";
+    position: absolute;
+    height: 3.75em;
+    width: 3.75em;
+    background-color: #1bb68a;
+    border-radius: 3.75em 0;
+    bottom: 0.75em;
+    left: -2em;
+    transform: rotate(-50deg);
+  }
+
+
+
+
+
+
+  .table:before {
+    content: "";
+    position: absolute;
+    height: 3.75em;
+    width: 100vw;
+    background-color: #e7971f;
+    bottom: 0em;
+  }

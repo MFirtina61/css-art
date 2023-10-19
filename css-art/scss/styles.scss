@@ -1,0 +1,14 @@
+// styles.scss
+@import 'reset';
+@import 'layout';
+@import 'media';
+@import 'plant';
+
+
+
+// Media query
+@media screen and (min-width: 700px) {
+  .container {
+    font-size: 1.5em;
+  }
+}

@@ -1,13 +1,11 @@
-:root {
-  --mijnKleur: #ff0000; /* Definieer een aangepaste kleurvariabele */
-}
+$plant-size: 5.62em;
 
-.plant {
+@mixin plant-style($background-color) {
   position: absolute;
-  height: 5.62em;
-  width: 5.62em;
+  height: $plant-size;
+  width: $plant-size;
   background: linear-gradient(
-    var(--mijnKleur) 80%, /* Gebruik de variabele hier voor de achtergrondkleur */
+    $background-color 80%,
     #ffffff 80%,
     #90e0fd 80%
   );
@@ -16,7 +14,7 @@
   border-radius: 1rem;
 }
 
-.succulent {
+@mixin succulent-style {
   position: absolute;
   height: 2.5em;
   width: 2.5em;
@@ -25,16 +23,28 @@
   top: -2.18em;
   left: 2.5em;
   transform: rotate(10deg);
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 3.75em;
+    width: 3.75em;
+    background-color: #1bb68a;
+    border-radius: 3.75em 0;
+    bottom: 0.75em;
+    left: -2em;
+    transform: rotate(-50deg);
+  }
 }
 
-.succulent:before {
-  content: "";
-  position: absolute;
-  height: 3.75em;
-  width: 3.75em;
-  background-color: #1bb68a;
-  border-radius: 3.75em 0;
-  bottom: 0.75em;
-  left: -2em;
-  transform: rotate(-50deg);
+:root {
+  --mijnKleur: #ff0000; /* Definieer een aangepaste kleurvariabele */
+}
+
+.plant {
+  @include plant-style(var(--mijnKleur));
+}
+
+.succulent {
+  @include succulent-style;
 }
